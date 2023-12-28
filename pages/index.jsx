@@ -53,7 +53,7 @@ export default function HomePage() {
              {/* Artwork Display Panel */}
             <div className="relative z-0">
                 <div className="flex items-start my-5 relative">
-                    <div className="w-[100vh] left-0 h-[40vh] md:h-[40vh] overflow-hidden relative">
+                    <div className="w-full left-0 h-[40vh] md:h-[40vh] overflow-hidden relative">
                         <div className={`media-container relative h-full w-full ${mode === 'image' ? '' : 'hidden'}`}>
                             {loading ? ( <Skeleton height={400} width={400} />
                             ) : (
