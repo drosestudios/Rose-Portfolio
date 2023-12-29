@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import '@vidstack/react/player/styles/default/theme.css';
-import { VscDesktopDownload } from "react-icons/vsc";
+import { MdOutlineFolderOpen } from "react-icons/md";
 import { MdOutlineInsertPhoto } from "react-icons/md";
 
 import ID_ArcadePlayers from "../artworks/ID_ArcadePlayers.jpg"
@@ -98,13 +98,13 @@ const MusicShowcase = () => {
 
                             {/* Discography Buttons */}
                             <div className='flex'>
-                                  <a target="_blank" href={album.linktrack} download={album.title}>
-                                      <button
+                                 <a target="_blank" href={album.linktrack} download={album.title}>
+                                     <button
                                            className="mt-3 hover-button"
                                            isIconOnly radius="sm">
-                                           <VscDesktopDownload className='w-[16px] h-[16px] buttons-resize'/>
+                                           <MdOutlineFolderOpen className='w-[17px] h-[17px] buttons-resize'/>
                                      </button>
-                                  </a>
+                                 </a>
 
                                  <a target="_blank" href={album.linkartwork} download={album.title}>
                                      <button

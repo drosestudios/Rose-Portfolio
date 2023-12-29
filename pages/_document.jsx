@@ -20,7 +20,7 @@ export default function Document() {
         <meta name="theme-color" content="#000" />
 
         {/* Favicon Icon */}
-        <link rel="shortcut icon" href="/ID_Favicon.png" />
+        <link rel="shortcut icon" href="/ID_IconFavicon.png" />
 
         {/* Website Metadata */}
         <meta name="author" content="Ayl Rose" />
