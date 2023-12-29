@@ -13,9 +13,12 @@ export default function Footer() {
       <div className="mb-[20px] mt-[60px] flex minxs:flex max-w-full overflow-y-auto">
 
         {/* Copyright Credits Information */}
-        <p className="text-md notranslate"> &copy;&ensp;{new Date().getFullYear()}&thinsp;Ayl&thinsp;Rose Rights Reserved.</p>
+        <div className='max-[390px]:text-[15px]'>
+           <p className="text-md notranslate"> &copy;&ensp;{new Date().getFullYear()}&thinsp;Ayl&thinsp;Rose Rights Reserved.</p>
+        </div>
 
         <div className="flex-1"></div>
+        
         {/* Social Medias Icons Footer */}
         <div className="text-md">
           <Link

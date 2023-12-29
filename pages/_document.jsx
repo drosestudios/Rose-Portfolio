@@ -15,7 +15,7 @@ export default function Document() {
               crossOrigin="anonymous" referrerpolicy="no-referrer"
         />
         
-        {/* Font Family */}
+        {/* Information */}
         <meta charSet="utf-8" />
         <meta name="theme-color" content="#000" />
 

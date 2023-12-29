@@ -95,6 +95,15 @@ img::selection {
   }
 }
 
+.hover-button {
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.hover-button:hover {
+  transform: scale(1.05);
+}
+
 .loading-spinner {
   border: 3px solid;
   border-top: 3px solid transparent;
@@ -175,6 +184,14 @@ input[type="range"] {
 
 ::-webkit-slider-runnable-track {
   background: rgb(214, 214, 214);
+}
+
+@media (max-width: 768px) {
+    .buttons-resize {
+      width: 20px;
+      height: 20px;
+      object-fit: fill;
+    }
 }
 
 ::-webkit-slider-thumb {

@@ -7,10 +7,7 @@ export default function Fallback() {
 
             <p className="flex items-center gap-2 text-2xl">
 
-                <svg
-                    xmlns="http://www.w3.org/2000/svg" width="1em"
-                    height="1em" viewBox="0 0 512 512"
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512" >
 
                     <path
                         fill="none" stroke="currentColor"
@@ -26,7 +23,8 @@ export default function Fallback() {
                     ></path>
 
                 </svg>
-                <span>You are Offline :\</span>
+                <span>You are Offline User :\</span>
+
             </p>
         </div>
     );

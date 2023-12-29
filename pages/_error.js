@@ -10,16 +10,16 @@ function Error({ statusCode }) {
                 <div className="relative text-3xl">Reload The Page!</div>
                 <div className="flex items-center gap-2 text-xl">
 
-          <span>
-            {statusCode
+            <span>
+                {statusCode
                 ? `An error ${statusCode} occurred on server.`
                 : "An error occurred on client."}
-          </span>
+            </span>
 
-                </div>
+            </div>
                 <Link href="/"
-                    className="rounded ring-action/50 ring-1 p-2 font-karla bg-action bg-opacity-0 
-                    hover:bg-opacity-20 hover:scale-105 text-white transition-all duration-300"
+                     className="rounded ring-action/50 ring-1 p-2 font-karla bg-action bg-opacity-0 
+                     hover:bg-opacity-20 hover:scale-105 text-white transition-all duration-300"
                 > Back to home </Link>
             </div>
 

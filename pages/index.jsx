@@ -50,10 +50,12 @@ export default function HomePage() {
 
             <SiteTransitions />
 
-             {/* Artwork Display Panel */}
+             {/* Artwork Main Data */}
             <div className="relative z-0">
                 <div className="flex items-start my-5 relative">
                     <div className="w-full left-0 h-[40vh] md:h-[40vh] overflow-hidden relative">
+
+                        {/* Artwork Display Panel */}
                         <div className={`media-container relative h-full w-full ${mode === 'image' ? '' : 'hidden'}`}>
                             {loading ? ( <Skeleton height={400} width={400} />
                             ) : (
@@ -70,7 +72,6 @@ export default function HomePage() {
                         <> {loadingdisplay} </>
                     ) : ( <MusicShowcase /> )}
                 </div>
-
             </div>
         </main>
     );
