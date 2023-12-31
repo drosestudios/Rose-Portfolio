@@ -5,13 +5,13 @@ import '@vidstack/react/player/styles/default/theme.css';
 import { MdOutlineFolderOpen } from "react-icons/md";
 import { MdOutlineInsertPhoto } from "react-icons/md";
 
-import ID_ArcadePlayers from "../artworks/ID_ArcadePlayers.jpg"
+import ID_ArcadePlayers from "../artworks/ID_ArcadePlayers.png"
 import ID_SaphIndustries from "../artworks/ID_SaphIndustries.png"
 import ID_UsedToBeOkay from "../artworks/ID_UsedToBeOkay.png"
-import ID_HeWasAGoodStalker from "../artworks/ID_HeWasAGoodStalker.jpg"
-import ID_LastSignals from "../artworks/ID_LastSignals.png"
-import ID_LastExpedition from "../artworks/ID_LastExpedition.png"
-import ID_Erased from "../artworks/ID_Erased.png"
+import ID_HeWasAGoodStalker from "../artworks/ID_HeWasAGoodStalker.png"
+import ID_LastSignals from "../artworks/ID_LastSignals.jpg"
+import ID_LastExpedition from "../artworks/ID_LastExpedition.jpg"
+import ID_Erased from "../artworks/ID_Erased.jpg"
 
 const MusicShowcase = () => {
 
@@ -22,49 +22,49 @@ const MusicShowcase = () => {
             description: 'Nu Disco - 27/12/2023', 
 
             linktrack: 'https://cdn.discordapp.com/attachments/1189859786385276998/1190202650331983982/Ayl_Rose_-_Erased.mp3',
-            linkartwork: 'https://cdn.discordapp.com/attachments/1189853695463137381/1190218299355697152/Wallpapers_Erased.rar'
+            linkartwork: 'https://cdn.discordapp.com/attachments/1189853695463137381/1191147458693173268/Wallpaper_-_Erased.png'
         },
         { 
             title: 'Last Expedition', cover: ID_LastExpedition, 
             description: 'Synthwave - 11/12/2023', 
 
             linktrack: 'https://cdn.discordapp.com/attachments/1189859786385276998/1190202710033711124/Ayl_Rose__Teirrel_-_Last_Expedition.mp3',
-            linkartwork: 'https://cdn.discordapp.com/attachments/1189853695463137381/1190218492432093204/Wallpapers_Last_Expedition.rar'
+            linkartwork: 'https://cdn.discordapp.com/attachments/1189853695463137381/1191147357484613813/Wallpaper_-_Last_Expedition.png'
         },
         { 
             title: 'Last Signals', cover: ID_LastSignals, 
             description: 'Synthwave - 10/12/2023', 
 
             linktrack: 'https://cdn.discordapp.com/attachments/1189859786385276998/1190202903848308736/Ayl_Rose_-_Last_Signals.mp3',
-            linkartwork: 'https://cdn.discordapp.com/attachments/1189853695463137381/1190218532571598948/Wallpapers_Last_Signals.rar'
+            linkartwork: 'https://cdn.discordapp.com/attachments/1189853695463137381/1191147274596786196/Wallpaper_-_Last_Signals.png'
         },
         { 
             title: 'Used To Be Okay', cover: ID_UsedToBeOkay, 
             description: 'Deep House - 22/11/2023', 
 
             linktrack: 'https://cdn.discordapp.com/attachments/1189859786385276998/1190202983804305438/Ayl_Rose_-_Used_To_Be_Okay.mp3',
-            linkartwork: 'https://cdn.discordapp.com/attachments/1189853695463137381/1190218781297999954/Wallpapers_Used_To_Be_Okay.rar'
+            linkartwork: 'https://cdn.discordapp.com/attachments/1189853695463137381/1191147256691298394/Wallpaper_-_Used_To_Be_Okay.png'
         },
         { 
             title: 'Saph Industries', cover: ID_SaphIndustries, 
             description: 'Synthwave - 14/11/2023', 
 
             linktrack: 'https://cdn.discordapp.com/attachments/1189859786385276998/1190202938329681972/Ayl_Rose_-_Saph_Industries.mp3',
-            linkartwork: 'https://cdn.discordapp.com/attachments/1189853695463137381/1190218667930165429/Wallpapers_Saph_Industries.rar'
+            linkartwork: 'https://cdn.discordapp.com/attachments/1189853695463137381/1191147145441595412/Wallpaper_-_Saph_Industries.png'
         },
         { 
             title: 'Arcade Players', cover: ID_ArcadePlayers, 
             description: 'Dance & EDM - 10/10/2023', 
 
             linktrack: 'https://cdn.discordapp.com/attachments/1189859786385276998/1190203023784415254/Ayl_Rose__Maexev_-_Arcade_Players.mp3',
-            linkartwork: 'https://cdn.discordapp.com/attachments/1189853695463137381/1190219797724663849/Wallpapers_Arcade_Players.rar'
+            linkartwork: 'https://cdn.discordapp.com/attachments/1189853695463137381/1191147004559118426/Wallpaper_-_Arcade_Players.png'
         },
         { 
             title: 'He Was A Good Stalker', cover: ID_HeWasAGoodStalker, 
             description: 'Vaporwave - 19/01/2023', 
 
             linktrack: 'https://cdn.discordapp.com/attachments/1189859786385276998/1190203072169918614/Ayl_Rose_-_He_Was_A_Good_Stalker.mp3',
-            linkartwork: 'https://cdn.discordapp.com/attachments/1189853695463137381/1190219809099620452/Wallpapers_He_Was_A_Good_Stalker.rar'
+            linkartwork: 'https://cdn.discordapp.com/attachments/1189853695463137381/1191146926616363038/Wallpaper_-_He_Was_A_Good_Stalker.png'
         },
     ];
 
