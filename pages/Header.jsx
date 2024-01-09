@@ -10,12 +10,10 @@ const Header = () => {
         
         {/* Navbar Items Collection */}
         <div className="mx-auto max-w-4xl">
+
           <nav className="flex items-center gap-1 text-base m-6">
-            <Link href="/" className="group">
-              <h2 className="font-bold text-xl flex items-center notranslate text-radish-red dark:text-darkish-purple">
-                AYL&thinsp;ROSE OFFICIAL
-              </h2>
-            </Link>        
+
+            <h2 className="font-bold text-xl flex items-center notranslate"> AYL&thinsp;ROSE OFFICIAL </h2>    
 
             <div className="flex-1"></div>
 

@@ -4,6 +4,8 @@ import Image from "next/image";
 import Head from "next/head";
 import Body from '/components/Body.tsx';
 
+import AboutShowcase from "../components/AboutShowcase";
+import YoutubeShowcase from "../components/YoutubeShowcase";
 import MusicShowcase from "../components/MusicShowcase";
 import SiteTransitions from "../components/SiteTransitions";
 import Skeleton from 'react-loading-skeleton';
@@ -66,12 +68,25 @@ export default function HomePage() {
                     </div>
                 </div>
 
+                <div className="mt-5 md:mt-[-0vh]">
+                    {loading ? (
+                        <> {loadingdisplay} </>
+                    ) : ( <AboutShowcase /> )}
+                </div>
+
+                <div className="mt-5 md:mt-[-0vh]">
+                    {loading ? (
+                        <> {loadingdisplay} </>
+                    ) : ( <YoutubeShowcase /> )}
+                </div>
+
                 {/* Discography Display Panel */}
                 <div className="mt-5 md:mt-[-0vh]">
                     {loading ? (
                         <> {loadingdisplay} </>
                     ) : ( <MusicShowcase /> )}
                 </div>
+                
             </div>
         </main>
     );

@@ -9,7 +9,6 @@ import { PiSoundcloudLogoFill } from "react-icons/pi";
 export default function Footer() {
   return (
     <footer>
-
       <div className="mb-[20px] mt-[60px] flex minxs:flex max-w-full overflow-y-auto">
 
         {/* Copyright Credits Information */}

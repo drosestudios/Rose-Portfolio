@@ -11,19 +11,11 @@ import ID_UsedToBeOkay from "../artworks/ID_UsedToBeOkay.png"
 import ID_HeWasAGoodStalker from "../artworks/ID_HeWasAGoodStalker.png"
 import ID_LastSignals from "../artworks/ID_LastSignals.jpg"
 import ID_LastExpedition from "../artworks/ID_LastExpedition.jpg"
-import ID_Erased from "../artworks/ID_Erased.jpg"
 
 const MusicShowcase = () => {
 
     // All Albums Main Data Information
     const albums = [
-        { 
-            title: 'Erased', cover: ID_Erased, 
-            description: 'Nu Disco - 27/12/2023', 
-
-            linktrack: 'https://cdn.discordapp.com/attachments/1189859786385276998/1190202650331983982/Ayl_Rose_-_Erased.mp3',
-            linkartwork: 'https://cdn.discordapp.com/attachments/1189853695463137381/1191147458693173268/Wallpaper_-_Erased.png'
-        },
         { 
             title: 'Last Expedition', cover: ID_LastExpedition, 
             description: 'Synthwave - 11/12/2023', 
@@ -73,12 +65,12 @@ const MusicShowcase = () => {
         <section className="mt-5s">
 
             {/* Discography Paragraph Text */}
-            <h2 className="text-3xl text-center font-bold mb-6">Discography</h2>
+            <h2 className="text-2xl text-center font-bold mb-6">DISCOGRAPHY</h2>
 
             {/* Discography Main Display Panel */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {albums.map((album, index) => (
-                    <div key={index} className="rounded-lg overflow-hidden shadow-md border-gray-300">
+                    <div key={index} className="rounded-lg overflow-hidden shadow-md discographyAnim">
 
                         {/* Discography Artwork */}
                         <div className="relative h-48"> (
