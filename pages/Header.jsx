@@ -13,12 +13,12 @@ const Header = () => {
 
           <nav className="flex items-center gap-1 text-base m-6">
 
-            <h2 className="font-bold text-xl flex items-center notranslate"> AYL&thinsp;ROSE OFFICIAL </h2>    
+            <h2 className="font-bold text-xl flex items-center notranslate margin-title ml-[2px]"> AYL&thinsp;ROSE OFFICIAL </h2>    
 
             <div className="flex-1"></div>
 
             {/* Theme Change Display */}
-            <div className="justify-end">
+            <div className="justify-end margin-button">
               <ColorModeToggle />
             </div>
 

@@ -1,11 +1,18 @@
+// All Main Components Imports
 import React from 'react';
 import Image from 'next/image';
 
-import '@vidstack/react/player/styles/default/theme.css';
+// All Discography Icons Imports
 import { MdOutlineFolderOpen } from "react-icons/md";
 import { MdOutlineInsertPhoto } from "react-icons/md";
 import { MdOutlineAnalytics } from "react-icons/md";
 
+// All Badges Icons Imports
+import { FaSpotify } from "react-icons/fa";
+import { SiApplemusic } from "react-icons/si";
+import { ImSoundcloud2 } from "react-icons/im";
+
+// All Portraits Imports
 import ID_ArcadePlayers from "../artworks/ID_ArcadePlayers.png"
 import ID_SaphIndustries from "../artworks/ID_SaphIndustries.png"
 import ID_UsedToBeOkay from "../artworks/ID_UsedToBeOkay.png"
@@ -17,7 +24,7 @@ import ID_EmptyStreets from "../artworks/ID_EmptyStreets.jpg"
 
 const MusicShowcase = () => {
 
-    // All Albums Main Data Information
+    // Albums Main Data Information
     const albums = [
         { 
             title: 'Empty Streets', cover: ID_EmptyStreets, 
@@ -113,32 +120,40 @@ const MusicShowcase = () => {
                             <h3 className="text-xl font-bold mb-2">{album.title}</h3>
                             <p className="text-gray-600">{album.description}</p>
 
-                            {/* Discography Buttons */}
-                            <div className='flex'>
+                            {/* Discography Actions Panel */}
+                            <div className='flex flex-row mt-[14px]'>
+                                 {/* Discography Buttons */}
                                  <a target="_blank" href={album.linktrack} download={album.title}>
                                      <button
-                                           className="mt-3 hover-button"
+                                           className="hover-button button-margin-response"
                                            isIconOnly radius="sm">
-                                           <MdOutlineFolderOpen className='w-[17px] h-[17px] buttons-resize'/>
+                                           <MdOutlineFolderOpen className='w-[20px] h-[20px] buttons-resize'/>
                                      </button>
                                  </a>
 
                                  <a target="_blank" href={album.linkartwork} download={album.title}>
                                      <button
-                                          className="mt-3 ml-2 hover-button" 
+                                          className="ml-2 hover-button button-margin-response" 
                                           isIconOnly radius="sm">
-                                          <MdOutlineInsertPhoto className='w-[17px] h-[17px] buttons-resize'/>
+                                          <MdOutlineInsertPhoto className='w-[20px] h-[20px] buttons-resize'/>
                                     </button>
                                  </a>
 
                                  <a target="_blank" href={album.linkyoutube} download={album.title}>
-                                     <button
-                                          className="mt-3 ml-2 hover-button" 
-                                          isIconOnly radius="sm">
-                                          <MdOutlineAnalytics className='w-[17px] h-[17px] buttons-resize'/>
+                                    <button 
+                                          className="mt-[1px] mr-1 ml-2 hover-button youtube-button rounded flex items-center h-[18px]" style={{ width: 'fit-content' }}>                                      
+                                          <MdOutlineAnalytics className='ml-[2px] mr-[5px] w-[14.5px] h-[14.5px] buttons-resize button-size-response'/>
+                                          <span className='font-bold text-[10px] mr-1'>Youtube</span>
                                     </button>
                                  </a>
 
+                                 {/* Discography Divisor and Badges */}
+                                 <div class="mt-[3px] ml-[15px] h-[14px] w-0.5 opacity-100 division-prop"></div>  
+                                 <div className='flex'>   
+                                    <span class="ml-[15px] rounded inline-flex items-center justify-center w-5 h-5 text-sm font-semibold text-green-400 "><FaSpotify></FaSpotify></span>
+                                    <span class="ml-[2px] rounded inline-flex items-center justify-center w-5 h-5 text-sm font-semibold text-red-400 "><SiApplemusic></SiApplemusic></span>  
+                                    <span class="ml-[2px] rounded inline-flex items-center justify-center w-5 h-5 text-sm font-semibold text-orange-400 "><ImSoundcloud2></ImSoundcloud2></span>  
+                                 </div>
                             </div>       
                         </div>
                     </div>
