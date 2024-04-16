@@ -23,7 +23,7 @@ export default function Fallback() {
                     ></path>
 
                 </svg>
-                <span>You are Offline User :\</span>
+                <span>You are offline user :\</span>
 
             </p>
         </div>

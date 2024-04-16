@@ -1,83 +1,52 @@
 /* TAILWIND IMPORTS^ */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@tailwind base; @tailwind components; @tailwind utilities;
 
-/* GOOGLE APIS ^ */
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
-
-/* WEBSITE THEMES */
-:root.light {
-  color-scheme: light;
-}
-
-:root.dark {
-  color-scheme: dark;
-}
+:root.light { color-scheme: light; }
+:root.dark { color-scheme: dark; }
 
 /* WEBSITE MAIN */
+
 * {
-  font-family: 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; overflow-wrap: break-word;
+  font-family: "Segoe UI";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-wrap: break-word;
 }
 
 /* WEBSITE SCROLLBAR */
+
 *::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 11px; height: 11px;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #444444;
-  border-radius: 0px;
-  border: none;
+  background-color: #c2c2c2;
+  border-radius: 0px; border: none;
 }
 
-*::-webkit-scrollbar-thumb:hover {
-  background-color: #555555;
-}
-
-*::-webkit-scrollbar-thumb:active {
-  background-color: #666666;
-}
-
-/* WEBSITE MAIN */
+*::-webkit-scrollbar-thumb:hover { background-color: #bcbcbc; }
+*::-webkit-scrollbar-thumb:active { background-color: #aeaeae; }
 
 /* WEBSITE BUTTON HOVER */
+
+.hover-button:hover { background-color: rgb(255, 100, 100); }
 .hover-button {
-  cursor: pointer;
-  transition: transform 0.1s ease;
+  cursor: pointer; transition: all 0.1s ease;
 }
 
-.hover-button:hover {
-  transform: scale(1.05);
-}
-
-.youtube-button {
-  border: 2px solid #333;
-}
-
-:root.dark .youtube-button {
-  border: 2px solid white
-} 
-
-.division-prop {
-  background-color: #333;
-}
-
-:root.dark .division-prop {
-  background-color: white;
-}
+.youtube-button { background-color: rgb(252, 134, 134); }
 
 /* WEBSITE DISCOGRAPHY */
+
+.card-header { font-size: clamp(15px, 20px, 25px); }
+
 .discographyAnim {
-  border-width: 2px;
+  font-size: clamp(10px, 15px, 25px);
+  border-width: 3px;
   border-color: transparent;
 
   transition: border-color 0.3s ease;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.1s ease-in-out;
 
   animation: borderAnimation 2s ease;
 }
@@ -104,30 +73,10 @@
 
 /* WEBSITE MEDIA RESPONSIVE */
 @media (max-width: 768px) {
-  .buttons-resize {
-    width: 22px;
-    height: 22px;
-    object-fit: fill;
-  }
-
   .youtube-embed {
     height: 195px;
   }
 
-  .image-rounded {
-    border-top-right-radius: 4px;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 0px;
-  }
-
-  .button-margin-response {
-    margin-top: -1px;
-  }
-
-  .button-size-response {
-    width: 16px;
-  }
-  
   .margin-title {
     margin-left: -8px;
   }
