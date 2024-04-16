@@ -3,11 +3,11 @@ import React from "react";
 import Image from "next/image";
 
 // All Portraits Imports
-import ID_01 from "../artworks/ar1.png";
-import ID_02 from "../artworks/ar2.png";
-import ID_03 from "../artworks/ar3.png";
-import ID_04 from "../artworks/ar4.png";
-import ID_05 from "../artworks/ar5.png";
+import ID_01 from "../artworks/ar1.webp";
+import ID_02 from "../artworks/ar2.webp";
+import ID_03 from "../artworks/ar3.webp";
+import ID_04 from "../artworks/ar4.webp";
+import ID_05 from "../artworks/ar5.webp";
 
 const MusicShowcase = () => {
   // Albums Main Data Information
