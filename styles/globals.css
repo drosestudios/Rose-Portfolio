@@ -32,15 +32,6 @@
 *::-webkit-scrollbar-thumb:hover { background-color: #bcbcbc; }
 *::-webkit-scrollbar-thumb:active { background-color: #aeaeae; }
 
-/* WEBSITE BUTTON HOVER */
-
-.hover-button:hover { background-color: rgb(255, 100, 100); }
-.hover-button {
-  cursor: pointer; transition: all 0.1s ease;
-}
-
-.youtube-button { background-color: rgb(252, 134, 134); }
-
 /* WEBSITE DISCOGRAPHY */
 
 .card-header { font-size: clamp(15px, 20px, 25px); }
@@ -80,6 +71,11 @@
 @media (max-width: 768px) {
   .youtube-embed {
     height: 195px;
+  }
+
+  .button-panel {
+    width: 91px;
+    height: 43px;
   }
 
   .margin-title {

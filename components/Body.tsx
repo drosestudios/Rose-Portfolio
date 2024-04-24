@@ -4,9 +4,7 @@ import React from 'react'
 export default function Body(props) {
     return (
         <main>
-            <Head>
-                <title className="notranslate">{props.title + ' - Rose'}</title>
-            </Head> {props.children} 
-            </main>
+            <Head> <title className="notranslate">{props.title + ' - DRose'}</title> </Head> {props.children} 
+        </main>
     )
 } 

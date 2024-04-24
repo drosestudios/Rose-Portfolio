@@ -8,11 +8,11 @@ const AboutShowcase = () => {
       {/* Information Text Panel */}
       <div className="rounded w-full md:w-[845px] h-auto md:h-[150px] shadow-md mb-6 flex flex-col md:flex-row">
         <div className="text-justify">
-          <p className="m-3 whitespace-wrap text-gray-500 dark:text-gray-400">
+          <p className="m-4 whitespace-wrap text-gray-500 dark:text-gray-300">
             <a
               href="https://github.com/drosestudios"
               target="_blank"
-              className="text-gray-600 font-bold"
+              className="text-gray-600 dark:text-purple-100 font-bold"
             >Ayl Rose{""}
             </a>, a programmer oriented to create new
             programs based on ideas or goals that have not yet been done before,
