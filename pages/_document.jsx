@@ -12,7 +12,7 @@ export default function Document() {
         {/* Font Family */}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
               integrity="sha512-0nDFE+k43BRyQa/Y7lm9ZGGpO4SwdTz/V4n9g3y2W3b8Y/lAht/sTkj4lREd5e3ATzA6S4R1MDPeDckj44eMQg=="  
-              crossOrigin="anonymous" referrerpolicy="no-referrer"
+              crossOrigin="anonymous"
         />
         
         {/* Information */}

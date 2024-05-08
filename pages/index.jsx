@@ -46,7 +46,7 @@ export default function HomePage() {
       {/* MAIN PAGE ARTWORK */}
       <div className="relative">
         
-        <div className="flex items-start my-5 relative">
+        <div className="flex items-start my-5 relative shadow-md ">
           <div className="w-full left-0 h-[30vh] md:h-[40vh] overflow-hidden relative rounded">
             {/* DISPLAY PANEL */}
             <div className={`media-container relative h-full w-full ${ mode === "image" ? "" : "hidden" }`}>

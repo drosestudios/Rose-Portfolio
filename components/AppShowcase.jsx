@@ -11,36 +11,36 @@ const AboutShowcase = () => {
         <Image quality={100} width={850} height={300} src="/app.webp" Flayout="fill" objectFit="cover" className="bg-blend-overlay object-cover brightness-100" />
 
         <div className="text-justify">
-          <p className="m-4 whitespace-wrap text-gray-500 dark:text-gray-300">
-              Organize your animes already seen easily, rosey offers you a simple and fast way to do this task, 
-              without complications of external databases such as AniList or other available options, add them yourself, 
-              your own personalization visually, do it to your liking, Using a grid visually as a gallery, you will have an 
-              adorable preview of your already completed animes.
+          <p className="m-4 mt-5 whitespace-wrap text-gray-500 dark:text-gray-300">
+                Manage your viewed show list in this fast, easy to use organizer! Rosey alows you do so without complications 
+                of external databases such as AniList or other available options. You can add shows yourself and customize
+                it to your liking in a grid-like gallary. You will have an adorable view of all the shows you've watched.
           </p>
 
-          <ul className="m-7 whitespace-wra text-gray-500 dark:text-gray-300">
-            <li><strong className="text-gray-800 dark:text-white">Elegantly Minimalistic (UI) - </strong>
-            Interact with the program in a simple and visually beautiful way thanks to its minimalist user interface design of achromatic colors, enjoy an orderly and visually pleasant experience that focuses on what is most important, your collection of already watched animes.</li>
+          <ul className="m-7 whitespace-normal text-gray-500 dark:text-gray-300">
+            <li><strong className="text-gray-800 dark:text-white">Stylish Design - </strong>
+                Interact with the program in a simple and visually beautiful way thanks to
+                its minimalist user interface design of achromatic colors. Enjoy an orderly and visually pleasant experience
+                that focuses on what is most important, your collection of viewed anime shows.</li>
 
-            <li><strong className="text-gray-800 dark:text-white">Gallery User Inferface (UI) - </strong>
-            Visually look at your animes, add your own covers and names to your liking, order them your way or by raffle from the available options, it all depends on your creativity.</li>
+            <li className="mt-2"><strong className="text-gray-800 dark:text-white">Gallery Panel - </strong>
+                Visually see your shows and add your own covers and names to your liking. 
+                Order them your way or choose from the available options. The possibilities are endless!</li>
 
-            <li><strong className="text-gray-800 dark:text-white">User-Friendly Interface (UI) - </strong>
-            Add and remove animes from your list easily and quickly thanks to its interface design in the animes that you have added with just a few steps, you are ready. Enjoy a seamless process that keeps your anime list looking perfect and cute for you!</li>
-
-            <li><strong className="text-gray-800 dark:text-white">Efficient/Simple Offline Mode - </strong>
-            Take your list of animes without the need for an external database or internet connection, create or add what you want from your computer with your own downloaded files or from the internet through a url, through its addition panel</li>
+            <li className="mt-2"><strong className="text-gray-800 dark:text-white mt-1">Offline Mode - </strong>
+                Take your library with you! Without the need for an external database or internet connection, this app can work 100% offline.
+                Create or add what you want from your computer with your own local files or from the internet.</li>
           </ul>
           
           <div className="m-7 flex flex-row">
             <a download="">
-              <button className="button-panel overflow-hidden mr-2 bg-blue-400 hover:bg-blue-500 rounded items-center h-[32px] w-[150px] font-bold text-[12px] text-white cursor-pointer transition duration-100 ease-in-out"> Download (Windows)</button>
+              <button className="button-panel overflow-hidden mr-2 bg-gray-400 hover:bg-gray-500 rounded items-center h-[32px] w-[150px] font-bold text-[12px] text-white cursor-pointer transition duration-100 ease-in-out"> Download (Windows)</button>
             </a>
             <a download="">
-              <button className="button-panel overflow-hidden mr-2 bg-red-400 hover:bg-red-500 rounded items-center h-[32px] w-[150px] font-bold text-[12px] text-white cursor-pointer transition duration-100 ease-in-out"> Download (MacOS)</button>
+              <button className="button-panel overflow-hidden mr-2 bg-gray-400 hover:bg-gray-500 rounded items-center h-[32px] w-[150px] font-bold text-[12px] text-white cursor-pointer transition duration-100 ease-in-out"> Download (MacOS)</button>
             </a>
             <a href="https://github.com/drosestudios/rosey" target="_blank">
-              <button className="button-panel overflow-hidden mr-2 border-4 dark:border-none dark:bg-slate-600 dark:hover:bg-slate-700 dark:text-white border-slate-600 hover:bg-slate-600 hover:text-white rounded items-center h-[32px] w-[150px] font-bold text-[12px] text-black cursor-pointer transition duration-100 ease-in-out"> Github Repo </button>
+              <button className="button-panel overflow-hidden mr-2 border-4 dark:border-none dark:bg-gray-500 hover:bg-gray-500 dark:hover:bg-slate-600 dark:text-white border-gray-500 hover:text-white rounded items-center h-[32px] w-[150px] font-bold text-[12px] text-black cursor-pointer transition duration-100 ease-in-out"> Github Repo </button>
             </a>
           </div>
         </div>
