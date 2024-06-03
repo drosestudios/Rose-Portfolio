@@ -1,31 +1,33 @@
 import { useEffect, useState } from "react";
 
 function useDarkMode() {
-  const [theme, setTheme] = useState (
-    typeof window !== "undefined"
-      ? localStorage.theme === undefined
-        ? window.matchMedia &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches
-          ? "dark"
-          : "light"
-        : localStorage.theme
-      : "light"
-  );
-  const colorTheme = theme === "dark" ? "light" : "dark";
+  const [theme, setTheme] = useState("light");
 
   useEffect(() => {
     const root = window.document.documentElement;
+    const storedTheme = localStorage.getItem("theme");
 
-    root.classList.remove(colorTheme);
-    root.classList.add(theme);
-    document.documentElement.className = theme;
-
-    if (typeof window !== "undefined") {
-      localStorage.setItem("theme", theme);
+    if (storedTheme) {
+      setTheme(storedTheme);
+    } else {
+      const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      setTheme(prefersDarkMode ? "dark" : "light");
     }
+  }, []);
 
+  useEffect(() => {
+    const root = window.document.documentElement;
+    if (theme === "dark") {
+      root.classList.add("dark");
+      root.classList.remove("light");
+    } else {
+      root.classList.add("light");
+      root.classList.remove("dark");
+    }
+    localStorage.setItem("theme", theme);
   }, [theme]);
-  return [colorTheme, setTheme];
+
+  return [theme, setTheme];
 }
 
 export default useDarkMode;

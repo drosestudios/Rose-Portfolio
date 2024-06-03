@@ -1,53 +1,54 @@
 import Image from "next/image";
 
-const AboutShowcase = () => {
+const AppShowcase = () => {
   return (
     <section className="mt-5">
-      {/* Category Text Panel */}
-      <h2 className="text-2xl text-center font-bold mb-6">ROSEY ORGANIZER</h2>
 
-      {/* Information Text Panel */}
-      <div className="rounded w-full md:w-[845px] h-auto shadow-md mb-6 flex flex-col">
-        <Image quality={100} width={850} height={300} src="/app.webp" Flayout="fill" objectFit="cover" className="bg-blend-overlay object-cover brightness-100" />
+      <div className="rounded-[8px] w-full md:w-[870px] h-auto shadow-md mb-6 flex flex-col">
 
-        <div className="text-justify">
-          <p className="m-4 mt-5 whitespace-wrap text-gray-500 dark:text-gray-300">
-                Manage your viewed show list in this fast, easy to use organizer! Rosey alows you do so without complications 
-                of external databases such as AniList or other available options. You can add shows yourself and customize
-                it to your liking in a grid-like gallary. You will have an adorable view of all the shows you've watched.
-          </p>
+        {/* IMAGE BACK AND PREVIEW */}
+        <div className="relative w-full md:w-[870px] h-[340px] overflow-hidden">
+            <Image quality={100} src={"/background.webp"} layout="fill" objectFit="cover"
+            className="bg-blend-overlay object-cover brightness-100 rounded" />
 
-          <ul className="m-7 whitespace-normal text-gray-500 dark:text-gray-300">
-            <li><strong className="text-gray-800 dark:text-white">Stylish Design - </strong>
-                Interact with the program in a simple and visually beautiful way thanks to
-                its minimalist user interface design of achromatic colors. Enjoy an orderly and visually pleasant experience
-                that focuses on what is most important, your collection of viewed anime shows.</li>
-
-            <li className="mt-2"><strong className="text-gray-800 dark:text-white">Gallery Panel - </strong>
-                Visually see your shows and add your own covers and names to your liking. 
-                Order them your way or choose from the available options. The possibilities are endless!</li>
-
-            <li className="mt-2"><strong className="text-gray-800 dark:text-white mt-1">Offline Mode - </strong>
-                Take your library with you! Without the need for an external database or internet connection, this app can work 100% offline.
-                Create or add what you want from your computer with your own local files or from the internet.</li>
-          </ul>
-          
-          <div className="m-7 flex flex-row">
-            <a download="">
-              <button className="button-panel overflow-hidden mr-2 bg-gray-400 hover:bg-gray-500 rounded items-center h-[32px] w-[150px] font-bold text-[12px] text-white cursor-pointer transition duration-100 ease-in-out"> Download (Windows)</button>
-            </a>
-            <a download="">
-              <button className="button-panel overflow-hidden mr-2 bg-gray-400 hover:bg-gray-500 rounded items-center h-[32px] w-[150px] font-bold text-[12px] text-white cursor-pointer transition duration-100 ease-in-out"> Download (MacOS)</button>
-            </a>
-            <a href="https://github.com/drosestudios/rosey" target="_blank">
-              <button className="button-panel overflow-hidden mr-2 border-4 dark:border-none dark:bg-gray-500 hover:bg-gray-500 dark:hover:bg-slate-600 dark:text-white border-gray-500 hover:text-white rounded items-center h-[32px] w-[150px] font-bold text-[12px] text-black cursor-pointer transition duration-100 ease-in-out"> Github Repo </button>
-            </a>
-          </div>
+            <Image quality={100} src={"/appimg.webp"} width={600} height={600} className=" z-10 mt-[50px] relative ml-[130px]"/>
         </div>
 
+        {/* TITLE & LOGO */}
+        <div className="m-4 mt-5 flex flex-row">
+          <Image quality={100} src={"/icon.webp"} width={30} height={30} className="mr-3"/>
+          <h1 className=" text-[20px] font-bold ">ROSEY ORGANIZER</h1>
+        </div>
+
+        {/* INFORMATION & BUTTONS */}
+        <div className="text-justify">
+
+          <p className="m-4 mt-[-1px] text-[16px] whitespace-wrap text-gray-600 dark:text-gray-100">
+                Manage your viewed show list in this fast, easy to use organizer! Rosey alows you do so without complications 
+                of external databases such as AniList or other available options. You can add shows yourself and customize
+                it to your liking in a grid-like gallery. You will have an minimal view of all the shows you've watched.
+          </p>
+          
+          <div className="m-4 flex flex-shrink flex-row">
+
+            <a download="">
+              <button className="button-app overflow-hidden mr-2 bg-[#282828] hover:bg-[#5d5d5d] rounded-[6px] items-center h-[35px] w-[153px] md:w-[185px] font-bold text-[12px] text-white cursor-pointer transition duration-100 ease-in-out">
+                DOWNLOAD WINDOWS
+              </button>
+            </a>
+            <a download="">
+              <button className="button-app overflow-hidden mr-2 bg-[#282828] hover:bg-[#5d5d5d] rounded-[6px] items-center h-[35px] w-[153px] md:w-[185px] font-bold text-[12px] text-white cursor-pointer transition duration-100 ease-in-out"> 
+                DOWNLOAD MACOS
+              </button>
+            </a>
+
+          </div>
+
+        </div>
       </div>
+
     </section>
   );
 };
 
-export default AboutShowcase;
+export default AppShowcase;

@@ -20,16 +20,15 @@ export default function Document() {
         <meta name="theme-color" content="#000" />
 
         {/* Favicon Icon */}
-        <link rel="shortcut icon" href="/icon.png" />
+        <link rel="shortcut icon" href="/icon.webp" />
 
         {/* Website Metadata */}
-        <meta name="author" content="Ayl Rose" />
+        <meta name="author" content="StudiosDRose" />
         <meta property="og:type" content="website" />
       </Head>
 
       {/* Special Object */}
       <body className="dark:bg-[#111111] bg-[#f9fafb] dark:text-white duration-75">
-
         <Main />
         <NextScript />
       </body>

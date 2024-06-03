@@ -8,17 +8,14 @@ const ColorModeToggle = () => {
   const [colorTheme, setTheme] = useDarkMode();
 
   return (
-
-    <button aria-label="toggle colormode" onClick={() => setTheme(colorTheme === "light" ? "light" : "dark")}
-      className="cursor-pointer dark:ring-white dark:bg-[#444444] hover:ring-[2px] transition-all ring-black p-2 bg-gray-300 rounded-lg">
+    <button aria-label="Toggle colormode" onClick={() => setTheme(colorTheme === "light" ? "dark" : "light")}
+      className="cursor-pointer dark:ring-white dark:bg-[#4f4f4f] hover:ring-[2px] transition-all ring-black p-2 bg-gray-200 rounded-lg">
 
       {colorTheme === "light" ? (
-        <span> <HiSun className="" size="20px" /> </span>
-      ) : (
-        <span> <TbMoonFilled size="20px" /> </span>
+        <HiSun size={20} /> ) : (
+        <TbMoonFilled size={20} />
       )}
     </button>
-
   );
 };
 
